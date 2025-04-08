@@ -1,7 +1,6 @@
 import sqlite3
 import streamlit as st
 from datetime import datetime
-import inquirer
 
 # Your existing database connection class
 class BGHQueryTool:
@@ -37,6 +36,7 @@ tool = BGHQueryTool()
 # Streamlit interface
 def main():
     st.title("BGH Decision Query Tool")
+    st.text("The Database contains BGH decisions from 2019 to 2025.")
 
     # Sidebar filters
     st.sidebar.header("Filter Options")
